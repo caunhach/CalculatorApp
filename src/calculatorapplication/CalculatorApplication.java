@@ -53,7 +53,7 @@ public class CalculatorApplication implements ActionListener{
     }
     public void addComponents(){
 
-        label.setBounds(250, 0, 50, 0);
+        label.setBounds(250, 0, 50, 50);
         label.setForeground(Color.white);
         frame.add(label);
 
@@ -236,6 +236,129 @@ public class CalculatorApplication implements ActionListener{
         else if (source == buttonClear){
             label.setText("");
             textField.setText("");
+        }
+        else if (source == buttonDelete){
+            int length = textField.getText().length();
+            int number = length - 1;
+            if (length > 0){
+                StringBuilder back = new StringBuilder(textField.getText());
+                back.deleteCharAt(number);
+                textField.setText(back.toString());
+            }
+            if (textField.getText().endsWith(""))
+                label.setText("");
+        }
+        else if (source == buttonZero){
+            if (textField.getText().equals("0"))
+                return;
+            else
+                textField.setText(textField.getText() + "0");
+        }
+        else if (source == buttonOne)
+            textField.setText(textField.getText() + "1");
+        else if (source == buttonTwo)
+            textField.setText(textField.getText() + "2");
+        else if (source == buttonThree)
+            textField.setText(textField.getText() + "3");
+        else if (source == buttonFour)
+            textField.setText(textField.getText() + "4");
+        else if (source == buttonFive)
+            textField.setText(textField.getText() + "5");
+        else if (source == buttonSix)
+            textField.setText(textField.getText() + "6");
+        else if (source == buttonSeven)
+            textField.setText(textField.getText() + "7");
+        else if (source == buttonEight)
+            textField.setText(textField.getText() + "8");
+        else if (source == buttonNine)
+            textField.setText(textField.getText() + "9");
+        else if (source == buttonDot){
+            if (textField.getText().contains(".")){
+                return ;
+            }
+            else {
+                textField.setText(textField.getText() + ".");
+            }
+        }
+        else if (source == buttonPLUS){
+            String str = textField.getText();
+            num1 = Double.parseDouble(textField.getText());
+            calculation = 1;
+            textField.setText("");
+            label.setText( str + "+");
+        }
+        else if (source == buttonMINUS){
+            String str = textField.getText();
+            num1 = Double.parseDouble(textField.getText());
+            calculation = 2;
+            textField.setText("");
+            label.setText( str + "-");
+        }
+        else if (source == buttonMUL){
+            String str = textField.getText();
+            num1 = Double.parseDouble(textField.getText());
+            calculation = 3;
+            textField.setText("");
+            label.setText( str + "X");
+        }
+        else if (source == buttonDiv){
+            String str = textField.getText();
+            num1 = Double.parseDouble(textField.getText());
+            calculation = 4;
+            textField.setText("");
+            label.setText( str + "/");
+        }
+        else if (source == buttonSQUARE){
+            num1 = Double.parseDouble(textField.getText());
+            double square = Math.pow(num1, 2);
+            String string = Double.toString(square);
+            if(string.endsWith(".0")){
+                textField.setText(string.replace(".0", ""));
+            }
+            else{
+                textField.setText(string);
+            }
+        }
+        else if (source == buttonSQRT){
+            num1 = Double.parseDouble(textField.getText());
+            double sqrt = Math.sqrt(num1);
+            textField.setText(Double.toString(sqrt));
+        }
+        else if (source == buttonReciprocal){
+            num1 = Double.parseDouble(textField.getText());
+            double reciprocal = 1/num1;
+            String string = Double.toString(reciprocal);
+            if (string.endsWith(".0")){
+                textField.setText(string.replace(".0", ""));
+            }
+            else{
+                textField.setText(string);
+            }
+        }
+        else if (source == buttonEqual){
+            num2 = Double.parseDouble(textField.getText());
+            switch(calculation){
+                case 1:
+                    result = num1 + num2;
+                    break;
+                case 2:
+                    result = num1 - num2;
+                    break;
+                case 3:
+                    result = num1 * num2;
+                    break;
+                case 4:
+                    result = num1 / num2;
+                    break;
+            }
+            if (Double.toString(result).endsWith(".0")){
+                textField.setText(Double.toString(result).replace(".0", ""));
+            }
+            else{
+                textField.setText(Double.toString(result));
+            }
+            label.setText("");
+            num1 = result;
         }
     }
     public void enable(){
