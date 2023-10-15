@@ -230,28 +230,58 @@ public class CalculatorApplication implements ActionListener{
         if (source == onRadioButton){
             enable();
         }
+        else if (source == offRadioButton){
+            disable();
+        }
+        else if (source == buttonClear){
+            label.setText("");
+            textField.setText("");
+        }
     }
     public void enable(){
-    onRadioButton.setEnabled(false);
-    offRadioButton.setEnabled(true);
-    textField.setEnabled(true);
-    label.setEnabled(true);
-    buttonClear.setEnabled(true);
-    buttonDelete.setEnabled(true);
-    buttonDiv.setEnabled(true);
-    buttonSQRT.setEnabled(true);
-    buttonSQUARE.setEnabled(true);
-    buttonReciprocal.setEnabled(true);
-    buttonMINUS.setEnabled(true);
-    buttonSeven.setEnabled(true);
-    buttonEight.setEnabled(true);
-    buttonNine.setEnabled(true);
-    buttonFour.setEnabled(true);
-    buttonFive.setEnabled(true);
-    buttonSix.setEnabled(true);
-    buttonPLUS.setEnabled(true);
-    buttonOne.setEnabled(true);
-    buttonTwo.setEnabled(true);
-    buttonThree.setEnabled(true);
-    }    
+        onRadioButton.setEnabled(false);
+        offRadioButton.setEnabled(true);
+        textField.setEnabled(true);
+        label.setEnabled(true);
+        buttonClear.setEnabled(true);
+        buttonDelete.setEnabled(true);
+        buttonDiv.setEnabled(true);
+        buttonSQRT.setEnabled(true);
+        buttonSQUARE.setEnabled(true);
+        buttonReciprocal.setEnabled(true);
+        buttonMINUS.setEnabled(true);
+        buttonSeven.setEnabled(true);
+        buttonEight.setEnabled(true);
+        buttonNine.setEnabled(true);
+        buttonFour.setEnabled(true);
+        buttonFive.setEnabled(true);
+        buttonSix.setEnabled(true);
+        buttonPLUS.setEnabled(true);
+        buttonOne.setEnabled(true);
+        buttonTwo.setEnabled(true);
+        buttonThree.setEnabled(true);
+    }
+    public void disable(){
+        onRadioButton.setEnabled(true);
+        offRadioButton.setEnabled(false);
+        textField.setEnabled(false);
+        label.setEnabled(false);
+        buttonClear.setEnabled(false);
+        buttonDelete.setEnabled(false);
+        buttonDiv.setEnabled(false);
+        buttonSQRT.setEnabled(false);
+        buttonSQUARE.setEnabled(false);
+        buttonReciprocal.setEnabled(false);
+        buttonMINUS.setEnabled(false);
+        buttonSeven.setEnabled(false);
+        buttonEight.setEnabled(false);
+        buttonNine.setEnabled(false);
+        buttonFour.setEnabled(false);
+        buttonFive.setEnabled(false);
+        buttonSix.setEnabled(false);
+        buttonPLUS.setEnabled(false);
+        buttonOne.setEnabled(false);
+        buttonTwo.setEnabled(false);
+        buttonThree.setEnabled(false);    
+    }
 }
