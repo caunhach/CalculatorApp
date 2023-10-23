@@ -30,10 +30,10 @@ JLabel label = new JLabel();
 ```
 ### 1.2 Set label
 - set the position of label
-- ```
+```
 label.setBounds(250, 0, 50, 50);
 ```
 - set the text color (Foreground color).
-- ```
+```
 label.setForeground(Color.white);
 ```
