@@ -82,6 +82,10 @@ JRadioButton offRadioButton = new JRadioButton("off");
 ```
 onRadioButton.setSelected(true);
 ```
+- set Font
+```
+onRadioButton.setFont(new Font("Arial", Font.BOLD, 14));
+```
 - add an on/off Radio Button to the frame
 ```
 frame.add(onRadioButton);
