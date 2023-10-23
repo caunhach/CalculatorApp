@@ -24,7 +24,7 @@ frame.setVisible(true);
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 ```
 ### 1.1 Create label
-label is a class in Java Swing that represents a displayed area for a short amount of text or an image. we will use it to show our lastest command in the calculator.
+label is a class in Java Swing that represents a displayed area for a short amount of text or an image. we will use it to show our latest command in the calculator. In this project, the history of command will lie on the top-right corner above the white-space.
 ```
 JLabel label = new JLabel();
 ```
