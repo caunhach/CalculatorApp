@@ -28,3 +28,4 @@ label is a class in Java Swing that represents a displayed area for a short amou
 ```
 JLabel label = new JLabel();
 ```
+### 1.2 Set label
