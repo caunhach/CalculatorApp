@@ -69,3 +69,7 @@ textField.setHorizontalAlignment(SwingConstants.RIGHT);
 frame.add(textField);
 ```
 ### 2.3.1 Create an on/off Radio Button
+```
+JRadioButton onRadioButton = new JRadioButton("on");
+JRadioButton offRadioButton = new JRadioButton("off");
+```
