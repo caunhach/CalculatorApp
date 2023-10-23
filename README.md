@@ -64,3 +64,7 @@ textField.setEditable(false);
 ```
 textField.setHorizontalAlignment(SwingConstants.RIGHT);
 ```
+- add textField to the frame
+```
+frame.add(textField);
+```
