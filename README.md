@@ -60,3 +60,7 @@ textField.setFont(new Font("Arial",Font.BOLD,20));
 ```
 textField.setEditable(false);
 ```
+- set text-ALignment
+```
+textField.setHorizontalAlignment(SwingConstants.RIGHT);
+```
