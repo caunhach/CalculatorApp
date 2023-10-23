@@ -42,5 +42,5 @@ label.setForeground(Color.white);
 ```
 frame.add(label);
 ```
-### 2.1 Create label
-### 2.1 Create label
+### 2.2.1 Create textField
+textField is a single-line text input field that the user can type text in the input field. you typically work with the AWT (Abstract Window Toolkit) or Swing libraries, depending on your application's requirements.
