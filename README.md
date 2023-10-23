@@ -44,3 +44,11 @@ frame.add(label);
 ```
 ### 2.2.1 Create textField
 textField is a single-line text input field that the user can type text in the input field. you typically work with the AWT (Abstract Window Toolkit) or Swing libraries, depending on your application's requirements.
+```
+JTextField textField = new JTextField();
+```
+### 2.2.2 Set textField
+- set font
+```
+textField.setFont(new Font("Arial",Font.BOLD,20));
+```
