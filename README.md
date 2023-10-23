@@ -48,7 +48,15 @@ textField is a single-line text input field that the user can type text in the i
 JTextField textField = new JTextField();
 ```
 ### 2.2.2 Set textField
+- set the position of the textField
+```
+textField.setBounds(10,40,270,40);
+```
 - set font
 ```
 textField.setFont(new Font("Arial",Font.BOLD,20));
+```
+-set editable
+```
+textField.setEditable(false);
 ```
