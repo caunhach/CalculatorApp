@@ -24,12 +24,12 @@ frame.setVisible(true);
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 ```
 ## Step2 : add components to frame
-### 1.1 Create label
+### 2.1 Create label
 label is a class in Java Swing that represents a displayed area for a short amount of text or an image. We will use it to show our latest command in the calculator. In this project, the command history will lie in the top-right corner above the white space.
 ```
 JLabel label = new JLabel();
 ```
-### 1.2 Set label
+### 2.2 Set label
 - set the position of the label
 ```
 label.setBounds(250, 0, 50, 50);
