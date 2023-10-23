@@ -74,3 +74,15 @@ In Java Swing, a JRadioButton is a GUI component used to create radio buttons in
 JRadioButton onRadioButton = new JRadioButton("on");
 JRadioButton offRadioButton = new JRadioButton("off");
 ```
+- set the position of the RadioButton
+```
+ onRadioButton.setBounds(10, 95, 60, 40);
+```
+- set the selected state (checked box)
+```
+onRadioButton.setSelected(true);
+```
+- add an on/off Radio Button to the frame
+```
+frame.add(onRadioButton);
+```
