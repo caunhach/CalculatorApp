@@ -37,3 +37,7 @@ label.setBounds(250, 0, 50, 50);
 ```
 label.setForeground(Color.white);
 ```
+- add a label to frame
+```
+frame.add(label);
+```
