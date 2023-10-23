@@ -56,7 +56,7 @@ textField.setBounds(10,40,270,40);
 ```
 textField.setFont(new Font("Arial",Font.BOLD,20));
 ```
--set editable
+- set editable
 ```
 textField.setEditable(false);
 ```
