@@ -15,7 +15,7 @@ frame.setSize(305, 510);:
 frame.getContentPane().setLayout(null);
 frame.getContentPane().setBackground(Color.black);
 ```
-- make the screen visible for you. Yes! it was hided till this step.
+- make the screen visible for you. Yes! it was hidden till this step.
 ```
 frame.setVisible(true);
 ```
@@ -24,8 +24,16 @@ frame.setVisible(true);
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 ```
 ### 1.1 Create label
-label is a class in Java Swing that represents a displayed area for a short amount of text or an image. we will use it to show our latest command in the calculator. In this project, the history of command will lie on the top-right corner above the white-space.
+label is a class in Java Swing that represents a displayed area for a short amount of text or an image. We will use it to show our latest command in the calculator. In this project, the command history will lie in the top-right corner above the white-space.
 ```
 JLabel label = new JLabel();
 ```
 ### 1.2 Set label
+- set the position of label
+- ```
+label.setBounds(250, 0, 50, 50);
+```
+- set the text color (Foreground color).
+- ```
+label.setForeground(Color.white);
+```
