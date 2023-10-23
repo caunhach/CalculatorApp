@@ -86,6 +86,14 @@ onRadioButton.setSelected(true);
 ```
 onRadioButton.setFont(new Font("Arial", Font.BOLD, 14));
 ```
+- set Background
+```
+onRadioButton.setBackground(Color.black);
+```
+- set Foreground
+```
+onRadioButton.setForeground(Color.white);
+```
 - add an on/off Radio Button to the frame
 ```
 frame.add(onRadioButton);
