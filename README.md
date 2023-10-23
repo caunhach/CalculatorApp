@@ -87,13 +87,17 @@ onRadioButton.setSelected(true);
 ```
 onRadioButton.setFont(new Font("Arial", Font.BOLD, 14));
 ```
-- set Background
+- Set background Color
 ```
 onRadioButton.setBackground(Color.black);
 ```
-- set Foreground
+- set Foreground Color
 ```
 onRadioButton.setForeground(Color.white);
+```
+- set Focusable (it won't receive keyboard focus when the user presses the Tab key or clicks on it with the mouse).
+```
+onRadioButton.setFocusable(false);
 ```
 - add an on/off Radio Button to the frame
 ```
