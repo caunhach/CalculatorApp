@@ -104,6 +104,7 @@ onRadioButton.setFocusable(false);
 frame.add(onRadioButton);
 ```
 ### 2.3.2 Add an on/off Radio Button to button group
+A ButtonGroup is used to group radio buttons so that only one radio button in the group can be selected at a time.
 ```
 ButtonGroup buttonGroup = new ButtonGroup();
 buttonGroup.add(onRadioButton);
