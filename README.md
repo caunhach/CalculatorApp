@@ -126,3 +126,12 @@ Setting an action listener on a button component to listen for and handle events
 buttonReciprocal.addActionListener(this);
 ```
 ### 3.1.2 Overide an action performed
+```
+@Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == myButton) {
+            // This block of code is executed when the button is clicked.
+            // You can specify the actions you want to perform here.
+        }
+    }
+```
