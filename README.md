@@ -23,7 +23,7 @@ frame.setVisible(true);
 ```
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 ```
-## Step2 : add components to frame
+## Step2 : Add components to frame
 ### 2.1.1 Create label
 label is a class in Java Swing that represents a displayed area for a short amount of text or an image. We will use it to show our latest command in the calculator. In this project, the command history will lie in the top-right corner above the white space.
 ```
@@ -119,5 +119,5 @@ buttonDelete.setBackground(Color.red);
 buttonDelete.setForeground(Color.white);
 buttonDelete.setFocusable(false);
 ```
-## Step3 : add Action Event
+## Step3 : Add Action Event
 Setting an action listener on a button component to listen for and handle events when the button is clicked.
