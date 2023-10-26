@@ -111,3 +111,11 @@ buttonGroup.add(onRadioButton);
 buttonGroup.add(offRadioButton);
 ```
 ### 2.4.1 Create JButton(s)
+build all others button
+```
+buttonDelete.setBounds(150, 110, 60, 40);
+buttonDelete.setFont(new Font("Arial", Font.BOLD, 12));
+buttonDelete.setBackground(Color.red);
+buttonDelete.setForeground(Color.white);
+buttonDelete.setFocusable(false);
+```
