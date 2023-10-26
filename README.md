@@ -120,3 +120,4 @@ buttonDelete.setForeground(Color.white);
 buttonDelete.setFocusable(false);
 ```
 ## Step3 : add Action Event
+Setting an action listener on a button component to listen for and handle events when the button is clicked.
