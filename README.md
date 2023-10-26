@@ -120,4 +120,8 @@ buttonDelete.setForeground(Color.white);
 buttonDelete.setFocusable(false);
 ```
 ## Step3 : Add Action Event
-Setting an action listener on a button component to listen for and handle events when the button is clicked.
+### 3.1.1 Add an action listener
+Setting an action listener on a button component to listen for and handle events when the button is clicked. here is one of the examples.
+```
+buttonReciprocal.addActionListener(this);
+```
